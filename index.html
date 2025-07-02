@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Luiz Vilela - Desenvolvedor Web especializado em sites profissionais, landing pages e soluções digitais para negócios locais.">
+    <meta name="keywords"
+        content="desenvolvedor web, sites profissionais, landing pages, desenvolvimento web, sites responsivos">
+    <title>Luiz Vilela - Desenvolvedor Web | Sites Profissionais & Landing Pages</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <div class="nav-logo">
+                    <span class="logo-text">LV</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#about" class="nav-link">Sobre</a>
+                    <a href="#services" class="nav-link">Serviços</a>
+                    <a href="#portfolio" class="nav-link">Portfólio</a>
+                    <a href="#contact" class="nav-link">Contato</a>
+                </div>
+                <div class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#about" class="mobile-nav-link">Sobre</a>
+        <a href="#services" class="mobile-nav-link">Serviços</a>
+        <a href="#portfolio" class="mobile-nav-link">Portfólio</a>
+        <a href="#contact" class="mobile-nav-link">Contato</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Luiz Vilela</h1>
+                <p class="hero-subtitle">Desenvolvedor Web</p>
+                <p class="hero-description">
+                    Especialista em criar sites profissionais que impulsionam negócios.
+                    Transformo ideias em experiências digitais incríveis.
+                </p>
+            </div>
+
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollToSection('contact')">
+                    Vamos Conversar
+                </button>
+                <button class="btn btn-secondary" onclick="scrollToSection('portfolio')">
+                    Ver Projetos
+                </button>
+            </div>
+
+            <div class="scroll-indicator" onclick="scrollToSection('about')">
+                <svg class="chevron-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6,9 12,15 18,9"></polyline>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Sobre <span class="text-accent">Mim</span></h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="about-content">
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <span class="stat-number">23</span>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Anos de Idade</h3>
+                            <p>Jovem e apaixonado por tecnologia</p>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon stat-icon-green">
+                            <span class="stat-number">3</span>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Anos de Experiência</h3>
+                            <p>Desenvolvendo soluções web profissionais</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-text">
+                    <p>
+                        Sou um desenvolvedor web especializado na criação de <strong>sites profissionais</strong>,
+                        <strong>landing pages</strong> e <strong>páginas para comércios locais</strong>.
+                    </p>
+
+                    <p>
+                        Com 3 anos de experiência, meu foco é ajudar empresas e profissionais a estabelecerem
+                        uma presença digital forte e eficiente, utilizando as melhores práticas de desenvolvimento
+                        e design moderno.
+                    </p>
+
+                    <!-- <div class="tech-stack">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">WordPress</span>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Meus <span class="text-accent">Serviços</span></h2>
+                <div class="section-divider"></div>
+                <p class="section-description">
+                    Ofereço soluções completas em desenvolvimento web, desde a concepção até a entrega final
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16,18 22,12 16,6"></polyline>
+                            <polyline points="8,6 2,12 8,18"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Sites Personalizados</h3>
+                    <p>Desenvolvimento de sites únicos e profissionais, criados sob medida para seu negócio.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path
+                                d="m2,12a15.3,15.3 0 0 1 4,-6 15.3,15.3 0 0 1 4,6 15.3,15.3 0 0 1 -4,6 15.3,15.3 0 0 1 -4,-6z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3>Landing Pages</h3>
+                    <p>Páginas de conversão otimizadas para maximizar resultados e gerar mais leads.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="m22 21-3-3m0 0a2 2 0 1 1-3-3 2 2 0 0 1 3 3z"></path>
+                        </svg>
+                    </div>
+                    <h3>Sites para Negócios Locais</h3>
+                    <p>Soluções digitais para comércios locais aumentarem sua presença online.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                    </div>
+                    <h3>Design Responsivo</h3>
+                    <p>Sites que funcionam perfeitamente em qualquer dispositivo, do celular ao desktop.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="m3 21 1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z"></path>
+                        </svg>
+                    </div>
+                    <h3>Integrações WhatsApp</h3>
+                    <p>Conecte seu site com WhatsApp, redes sociais e sistemas de agendamento.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="13,2 3,14 12,14 11,22 21,10 12,10 13,2"></polygon>
+                        </svg>
+                    </div>
+                    <h3>Performance Otimizada</h3>
+                    <p>Sites rápidos e otimizados para SEO, garantindo melhor posicionamento no Google.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Portfólio</h2>
+                <div class="section-divider"></div>
+                <p class="section-description">Alguns dos projetos que desenvolvi para clientes satisfeitos.</p>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- Projeto 1 -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="img/KaioBarber.jpg" alt="Kaio the barber" />
+                        <div class="portfolio-overlay"></div>
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-category">Site Comercial</span>
+                        <h3>Kaio the barber</h3>
+                        <a href="https://kaiobarbarber.netlify.app" target="_blank" class="portfolio-btn">
+                            Ver Projeto
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" width="16" height="16">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Projeto 2 -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="img/BrescianiBarbearia.jpg" alt="Barbearia Italiana" />
+                        <div class="portfolio-overlay"></div>
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-category">Site Comercial</span>
+                        <h3>Barbearia Italiana</h3>
+                        <button class="portfolio-btn disabled">
+                            Em breve
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" width="16" height="16">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <!-- Projeto 3 -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.pexels.com/photos/305568/pexels-photo-305568.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt="Gustavo Barbeiro">
+                        <div class="portfolio-overlay"></div>
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-category">Site Comercial</span>
+                        <h3>Gustavo Barbeiro</h3>
+                        <button class="portfolio-btn disabled">
+                            Em breve
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" width="16" height="16">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Projeto 4 -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt="Consultoria Financeira">
+                        <div class="portfolio-overlay"></div>
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="portfolio-category">Site Profissional</span>
+                        <h3>Gabriel Andrade - Engenheiro Civil</h3>
+                        <button class="portfolio-btn disabled">
+                            Em breve
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" width="16" height="16">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Vamos <span class="text-accent">Conversar</span></h2>
+                <div class="section-divider"></div>
+                <p class="section-description">
+                    Pronto para transformar sua ideia em realidade? Entre em contato comigo!
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <a href="mailto:luizvilel4@gmail.com" class="contact-card">
+                    <div class="contact-icon contact-icon-red">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Email</h3>
+                    <p>luizvilel4@gmail.com</p>
+                </a>
+
+                <a href="https://wa.me/5511972192244" target="_blank" rel="noopener noreferrer" class="contact-card">
+                    <div class="contact-icon contact-icon-green">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="m3 21 1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z"></path>
+                        </svg>
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <p>(11) 97219-2244</p>
+                </a>
+
+                <a href="https://instagram.com/_luizvilela" target="_blank" rel="noopener noreferrer"
+                    class="contact-card">
+                    <div class="contact-icon contact-icon-pink">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="m16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </div>
+                    <h3>Instagram</h3>
+                    <p>@_luizvilela</p>
+                </a>
+            </div>
+
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <div class="stars">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <polygon
+                                points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2">
+                            </polygon>
+                        </svg>
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <polygon
+                                points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2">
+                            </polygon>
+                        </svg>
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <polygon
+                                points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2">
+                            </polygon>
+                        </svg>
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <polygon
+                                points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2">
+                            </polygon>
+                        </svg>
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <polygon
+                                points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2">
+                            </polygon>
+                        </svg>
+                    </div>
+                    <p>
+                        "Trabalho excepcional! Luiz entregou exatamente o que precisávamos, no prazo e com qualidade
+                        impecável."
+                    </p>
+                    <p class="testimonial-author">- Cliente Satisfeito</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Luiz Vilela - Desenvolvedor Web. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
