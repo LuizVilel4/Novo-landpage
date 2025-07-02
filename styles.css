@@ -569,6 +569,8 @@ body {
     cursor: default;
 }
 
+
+
 /* Contact Section */
 .contact {
     padding: 5rem 0;
@@ -755,6 +757,11 @@ body {
     .about-stats {
         flex-direction: column;
     }
+    
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -774,11 +781,11 @@ body {
     
     .portfolio-grid {
         grid-template-columns: 1fr;
-        gap: 1.5rem;
+        gap: 1rem;
     }
-    
+
     .portfolio-item {
-        min-width: auto;
+        margin-bottom: 1rem;
     }
 }
 

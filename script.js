@@ -67,6 +67,8 @@ function setupIntersectionObserver() {
     });
 }
 
+
+
 // Portfolio item click handlers
 function setupPortfolioHandlers() {
     const portfolioBtns = document.querySelectorAll('.portfolio-btn');
@@ -159,6 +161,8 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Setup portfolio handlers
     setupPortfolioHandlers();
+    
+
     
     // Setup typing animation (optional - uncomment if you want it)
     // setupTypingAnimation();
