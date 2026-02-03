@@ -27,11 +27,11 @@
                     <a href="#portfolio" class="nav-link">Portfólio</a>
                     <a href="#contact" class="nav-link">Contato</a>
                 </div>
-                <div class="mobile-menu-btn" id="mobileMenuBtn">
+                <button class="mobile-menu-btn" id="mobileMenuBtn" type="button" aria-label="Abrir menu" aria-controls="mobileMenu" aria-expanded="false">
                     <span></span>
                     <span></span>
                     <span></span>
-                </div>
+                </button>
             </div>
         </div>
     </nav>
@@ -223,17 +223,22 @@
                 <p class="section-description">Alguns dos projetos que desenvolvi para clientes satisfeitos.</p>
             </div>
 
-            <div class="portfolio-grid">
+            <div class="portfolio-carousel" id="portfolioCarousel" role="region" aria-label="Carrossel de portfolio" tabindex="0">
+                <button class="portfolio-control portfolio-control-prev" type="button" id="portfolioPrev" aria-label="Projeto anterior">
+                    <span aria-hidden="true">&#10094;</span>
+                </button>
+                <div class="portfolio-viewport">
+                    <div class="portfolio-track">
                 <!-- Projeto 1 -->
                 <div class="portfolio-item">
                     <div class="portfolio-image">
-                        <img src="img/KaioBarber.jpg" alt="Kaio the barber" />
+                        <img src="img/KaioBarber.jpg" alt="Kaio the barber" loading="lazy" decoding="async" />
                         <div class="portfolio-overlay"></div>
                     </div>
                     <div class="portfolio-content">
                         <span class="portfolio-category">Site Comercial</span>
                         <h3>Kaio the barber</h3>
-                        <a href="https://kaiobarbarber.netlify.app" target="_blank" class="portfolio-btn">
+                        <a href="https://kaiobarbarber.netlify.app" target="_blank" rel="noopener noreferrer" class="portfolio-btn">
                             Ver Projeto
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor" width="16" height="16">
@@ -247,13 +252,13 @@
                 <!-- Projeto 2 -->
                 <div class="portfolio-item">
                     <div class="portfolio-image">
-                        <img src="img/B.png" alt="Bresciani Barbearia" />
+                        <img src="img/B.png" alt="Bresciani Barbearia" loading="lazy" decoding="async" />
                         <div class="portfolio-overlay"></div>
                     </div>
                     <div class="portfolio-content">
                         <span class="portfolio-category">Site Comercial</span>
                         <h3>Bresciani Barbearia</h3>
-                        <a href="https://luizvilel4.github.io/Bresciane/" target="_blank" class="portfolio-btn">
+                        <a href="https://luizvilel4.github.io/Bresciane/" target="_blank" rel="noopener noreferrer" class="portfolio-btn">
                             Ver Projeto
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor" width="16" height="16">
@@ -267,13 +272,13 @@
                 <!-- Projeto 3 -->
                 <div class="portfolio-item">
                     <div class="portfolio-image">
-                        <img src="img/GustavoBarbearia.png" alt="Gustavo Barbearia" />
+                        <img src="img/GustavoBarbearia.png" alt="Gustavo Barbearia" loading="lazy" decoding="async" />
                         <div class="portfolio-overlay"></div>
                     </div>
                     <div class="portfolio-content">
                         <span class="portfolio-category">Site Comercial</span>
                         <h3>Gustavo Barbearia</h3>
-                        <a href="https://luizvilel4.github.io/Gustavo-Barbearia" target="_blank" class="portfolio-btn">
+                        <a href="https://luizvilel4.github.io/Gustavo-Barbearia" target="_blank" rel="noopener noreferrer" class="portfolio-btn">
                             Ver Projeto
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor" width="16" height="16">
@@ -287,13 +292,13 @@
                 <!-- Projeto 4 -->
                 <div class="portfolio-item">
                     <div class="portfolio-image">
-                        <img src="img/engenharia_civil.jpg" alt="Gabriel Andrade - Engenheiro Civil">
+                        <img src="img/engenharia_civil.jpg" alt="Gabriel Andrade - Engenheiro Civil" loading="lazy" decoding="async">
                         <div class="portfolio-overlay"></div>
                     </div>
                     <div class="portfolio-content">
                         <span class="portfolio-category">Site Profissional</span>
                         <h3>Gabriel Andrade - Engenheiro Civil</h3>
-                        <a href="https://luizvilel4.github.io/GabrielAndrade/" target="_blank" class="portfolio-btn">
+                        <a href="https://luizvilel4.github.io/GabrielAndrade/" target="_blank" rel="noopener noreferrer" class="portfolio-btn">
                             Ver Projeto
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor" width="16" height="16">
@@ -303,7 +308,13 @@
                         </a>
                     </div>
                 </div>
+                    </div>
+                </div>
+                <button class="portfolio-control portfolio-control-next" type="button" id="portfolioNext" aria-label="Proximo projeto">
+                    <span aria-hidden="true">&#10095;</span>
+                </button>
             </div>
+            <div class="portfolio-dots" id="portfolioDots" aria-label="Navegacao do carrossel"></div>
         </div>
     </section>
 
@@ -399,7 +410,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Luiz Vilela - Desenvolvedor Web. Todos os direitos reservados.</p>
+            <p>&copy; <span id="currentYear"></span> Luiz Vilela - Desenvolvedor Web. Todos os direitos reservados.</p>
         </div>
     </footer>
 
